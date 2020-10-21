@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading;
@@ -95,6 +96,42 @@ namespace LinkedList
             }
         }
 
+        public void removeAtCertainPosition(int pos)
+        {
+            if (pos < 1)
+            {
+                Console.WriteLine("Invalid position");
+
+            }
+            else
+            {
+                if (pos == 1)
+                {
+                    // Node node = new Node(Data);
+
+                    // node.next = head;
+                    //  head = node;
+
+                    head = head.next;
+
+                }
+                else
+                {
+
+                  //  Node node = new Node(Data);
+                    Node temp = head;
+                    Node prev=null;
+                    for (int i = 2; i <=pos; i++)
+                    {
+                        prev = temp;
+                        temp = temp.next;
+                    }
+
+                    prev.next = temp.next;
+
+                }
+            }
+        }
         public int getPosition(int data)
         {
             if(head==null)
@@ -142,6 +179,18 @@ namespace LinkedList
                 }
             }
             Console.WriteLine();
+        }
+
+        public int size()
+        {
+            Node temp = head;
+            int count = 0;
+            while(temp!=null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            return count;
         }
     }
 }
