@@ -17,23 +17,24 @@ namespace LinkedList
             linkedList.Add(70);
             linkedList.Display();
 
-            linkedList.Insert(2, 30);
+            linkedList.Add(30);
             linkedList.Display();
 
 
             Console.WriteLine("Size is " + linkedList.size());
-            //Console.WriteLine("Position of 30 is "+linkedList.getPosition(30));
+            Console.WriteLine("Position of 30 is " + linkedList.getPosition(30));
 
-            //int position = linkedList.getPosition(30);
-            //linkedList.Insert(position + 1, 40);
-            //linkedList.Display();
+            int position = linkedList.getPosition(30);
+            linkedList.Insert(position + 1, 40);
+            linkedList.Display();
 
             linkedList.removeAtCertainPosition(3);
             linkedList.Display();
             Console.WriteLine("Size is " + linkedList.size());
 
 
-
+          
+            linkedList.Display();
         }
     }
 }
