@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.PortableExecutable;
 using System.Text;
+using System.Threading;
 
 namespace LinkedList
 {
@@ -90,6 +92,37 @@ namespace LinkedList
                 }
                 Console.WriteLine(temp.data + " is rmoved from the list");
                 prev.next = null;
+            }
+        }
+
+        public int getPosition(int data)
+        {
+            if(head==null)
+            {
+                Console.WriteLine("list is empty");
+                return 0;
+
+            }
+            else
+            {
+                int pos = 0;
+                Node temp = head;
+                while(temp!=null)
+                {
+                    pos++;
+                    if(temp.data==data)
+                    {
+                        return pos;
+                    }
+                    temp = temp.next;
+
+                }
+                if(temp==null)
+                {
+                    Console.WriteLine("Element not found");
+                    
+                }
+                return 0;
             }
         }
 
