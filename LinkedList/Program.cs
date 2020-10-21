@@ -24,12 +24,9 @@ namespace LinkedList
 
             Console.WriteLine("Position of 30 is "+linkedList.getPosition(30));
 
-            Console.WriteLine("Position of 56 is " + linkedList.getPosition(56));
-
-            Console.WriteLine("Position of 70 is " + linkedList.getPosition(70));
-
-            Console.WriteLine("Position of 20 is " + linkedList.getPosition(20));
-
+            int position = linkedList.getPosition(30);
+            linkedList.Insert(position + 1, 40);
+            linkedList.Display();
 
 
 
