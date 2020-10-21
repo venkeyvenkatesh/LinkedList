@@ -17,7 +17,14 @@ namespace LinkedList
             linkedList.Insert(2, 30);
             linkedList.Display();
 
-            
+            linkedList.removetFirst();
+            linkedList.Display();
+
+            linkedList.removetFirst();
+            linkedList.Display();
+
+
+
         }
     }
 }

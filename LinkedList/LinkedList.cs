@@ -60,7 +60,18 @@ namespace LinkedList
                 }
             }
         }
-
+        public void removetFirst()
+        {
+            if(head==null)
+            {
+                Console.WriteLine("List is  empty");
+            }
+            else
+            {
+                Console.WriteLine(head.data + " is removed from the list");
+                head = head.next;
+            }
+        }
 
         public void Display()
         {
