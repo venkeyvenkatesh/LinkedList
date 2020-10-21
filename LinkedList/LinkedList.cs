@@ -27,6 +27,19 @@ namespace LinkedList
             }
 
         }
+        public void AddAtFirst(int data)
+        {
+            Node node = new Node(data);
+            if(head==null)
+            {
+                node.next = null;
+            }
+            else
+            {
+                node.next = head;
+            }
+            head = node;
+        }
 
         public void Display()
         {

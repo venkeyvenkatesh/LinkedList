@@ -9,9 +9,9 @@ namespace LinkedList
             Console.WriteLine("Welcome to the LinkedList Demo Program");
 
             LinkedList linkedList = new LinkedList();
-            linkedList.Add(56);
-            linkedList.Add(30);
-            linkedList.Add(70);
+            linkedList.AddAtFirst(70);
+            linkedList.AddAtFirst(30);
+            linkedList.AddAtFirst(56);
             linkedList.Display();
         }
     }
