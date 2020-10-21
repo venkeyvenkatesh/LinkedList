@@ -10,3 +10,4 @@ C:\Users\Administrator\source\repos\LinkedList\LinkedList\obj\Debug\netcoreapp3.
 C:\Users\Administrator\source\repos\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.dll
 C:\Users\Administrator\source\repos\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.pdb
 C:\Users\Administrator\source\repos\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\LinkedList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.csprojAssemblyReference.cache

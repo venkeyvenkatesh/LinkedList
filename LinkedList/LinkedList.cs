@@ -7,7 +7,7 @@ namespace LinkedList
     class LinkedList
     {
         public Node head;
-        public void Add(int data)
+        public void Append(int data)
         {
             Node node = new Node(data);
               if (head == null)
@@ -27,19 +27,7 @@ namespace LinkedList
             }
 
         }
-        public void AddAtFirst(int data)
-        {
-            Node node = new Node(data);
-            if(head==null)
-            {
-                node.next = null;
-            }
-            else
-            {
-                node.next = head;
-            }
-            head = node;
-        }
+      
 
         public void Display()
         {
