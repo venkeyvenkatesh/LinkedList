@@ -73,6 +73,26 @@ namespace LinkedList
             }
         }
 
+        public void removeAtLast()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is  empty");
+            }
+            else
+            {
+                Node temp = head;
+                Node prev = null; ;
+                while (temp.next != null)
+                {
+                    prev = temp;
+                    temp = temp.next;
+                }
+                Console.WriteLine(temp.data + " is rmoved from the list");
+                prev.next = null;
+            }
+        }
+
         public void Display()
         {
             if(head==null)
